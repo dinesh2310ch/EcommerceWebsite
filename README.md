@@ -58,14 +58,10 @@ Total Calculation: The total price of the cart is dynamically updated when items
 Live Chat
 Chat Interface: A live chat box is available on the site for real-time interaction.
 
-Message Display: Users can send and receive messages within the chat system.
+![img1](https://github.com/user-attachments/assets/add3c27c-df1e-45fb-a9d6-aceb9a7766df)
+![img2](https://github.com/user-attachments/assets/86740d15-4984-4868-a9c5-0ab4f2588f11)
+![img3](https://github.com/user-attachments/assets/4cf2dbca-ca91-4b33-99bf-c62334fbff5e)
 
-Future Improvements
-Backend Integration: Currently, the website is purely front-end. Future plans include integrating with a backend to persist cart data and provide real-time chat features with a chatbot.
-
-User Authentication: Implement user login and registration to save cart data between sessions.
-
-Payment Integration: Integrate a payment gateway for completing purchases.
 
 Contributing
 If you want to contribute to this project:
