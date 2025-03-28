@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="home.css"> <!--Css File-->
+    <link rel="stylesheet" href="chatbox.css">
+    <!--box icons-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">-->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav container">
+            <a href="" class="logo">Shopperz.</a>
+
+            <nav>
+                <ul id="MenuItems">
+
+                    <li><a href="login.html" class="">Sign up</a></li>
+                    <li><a href="contact.html" class="">Contact Us</a></li>
+                    <li><a href="index.html" class="">Products</a></li>
+                </ul>
+                <img src="img/moon.png" alt="" id="icon">
+            </nav>
+
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Shop Smart, Live Better: Unbeatable Deals Await You!
+                    </h1>
+                    <p></p>
+                    <a href="index.html" class="btn">Shop Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="img/image1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Featured Categories-->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="index.html"><img src="img/category-1.jpg" alt=""></a>
+                </div>
+                <div class="col-3">
+                    <a href="index.html"><img src="img/category-2.jpg" alt=""></a>
+                </div>
+                <div class="col-3">
+                    <a href="index.html"><img src="img/category-3.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chatbox-container" id="chatbox-container">
+        <div class="chatbox" id="chatbox">
+            <div class="chat-header" onclick="toggleChatbox()">
+                <span>Chat with us!</span>
+                <button id="chat-toggle">Open</button>
+            </div>
+            <div class="chat-content" id="chat-content">
+                <div class="messages" id="messages"></div>
+                <textarea id="messageInput" placeholder="Type your message here..."></textarea>
+                <button onclick="postMessage()" id="kl">Send</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="theme.js"></script>
+    <script src="chatbox.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/* Chatbox Container */
+.chatbox-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    font-family: Arial, sans-serif;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Chat Header */
+.chat-header {
+    background-color: orangered; /* Header background color */
+    color: #ffffff; /* Header text color */
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Open/Close Button Basic Style */
+#chat-toggle {
+    background-color: #ffffff; /* Button background color */
+    color: #404b57; /* Button text color */
+    border: 2px solid #404b57; /* Button border color */
+    padding: 5px 10px;
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: bold;
+    outline: none; /* Remove outline to improve aesthetics */
+}
+
+/* Open/Close Button Hover Effect */
+#chat-toggle:hover {
+    background-color: #404b57; /* Change background color on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+/* Open/Close Button when Chat is Open */
+.chat-open #chat-toggle {
+    background-color: #dc3545; /* Button background color when chat is open */
+    border-color: #dc3545; /* Button border color when chat is open */
+}
+
+/* Open/Close Button when Chat is Open - Hover Effect */
+.chat-open #chat-toggle:hover {
+    background-color: #c82333; /* Darken background color on hover */
+}
+
+/* Chat Content */
+.chat-content {
+    display: none; /* Initially hidden */
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-top: none;
+    height: 300px;
+    overflow-y: auto; /* Enable scroll for overflow */
+    color: black;
+}
+
+/* Messages */
+.messages div {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+}
+
+/* User's Messages */
+.message-user {
+    background-color: #007bff; /* User message background color */
+    color: #ffffff; /* User message text color */
+    text-align: right;
+}
+
+/* Support's Messages */
+.message-support {
+    background-color: #ffffff; /* Support message background color */
+    color: #333333; /* Support message text color */
+    text-align: left;
+}
+
+/* Text Input and Button */
+#messageInput, #kl {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#kl {
+    background-color: #28a745; /* Send button background color */
+    color: #ffffff; /* Send button text color */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#messageInput {
+    resize: none; /* Prevent resizing */
+    height: 50px; /* Fixed height for the text area */
+}
+
+/* Adjust the open state of chat-content */
+.chat-content.open {
+    display: block;
+}
